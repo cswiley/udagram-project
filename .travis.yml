@@ -22,7 +22,7 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push camwiley/udagram-api-feed
-  - docker push camwiley/udagram-api-user
-  - docker push camwiley/udagram-frontend
-  - docker push camwiley/reverseproxy
+  - docker push camwiley/udagram-api-feed:v1
+  - docker push camwiley/udagram-api-user:v1
+  - docker push camwiley/udagram-frontend:v1
+  - docker push camwiley/reverseproxy:v1
