@@ -43,5 +43,4 @@ venv/
 set_env.sh
 env.list
 *secret.yaml
-deploy/
 build-kube.sh
