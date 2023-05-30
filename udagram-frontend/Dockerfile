@@ -11,6 +11,6 @@ COPY . .
 RUN ionic build
 ## Run 
 FROM nginx:alpine
-COPY /nginx.conf /tetc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 #COPY www /usr/share/nginx/html
 COPY --from=ionic  /usr/src/app/www /usr/share/nginx/html
