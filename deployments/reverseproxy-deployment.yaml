@@ -18,9 +18,9 @@ spec:
         - name: reverseproxy
           image: camwiley/reverseproxy:latest
           resources:
-          requests:
-            memory: "64Mi"
-            cpu: "250m"
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
           limits:
             memory: "1024Mi"
             cpu: "500m"
