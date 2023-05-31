@@ -5,6 +5,7 @@ metadata:
     app: backend-feed
   name: backend-feed
 spec:
+  replicas: 2
   ports:
     - port: 8080
       protocol: TCP
