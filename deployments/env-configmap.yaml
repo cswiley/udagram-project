@@ -4,7 +4,7 @@ metadata:
   name: env-config
 data:
   AWS_BUCKET: "udagram-image-uploads"
-  AWS_REGION: us-east-1"
+  AWS_REGION: "us-east-1"
   AWS_PROFILE: "default"
   POSTGRES_HOST: "udagram-db.cx7oums89urt.us-east-1.rds.amazonaws.com"
   POSTGRES_DB: "postgres"
