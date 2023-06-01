@@ -3,9 +3,9 @@ kind: ConfigMap
 metadata:
   name: env-config
 data:
-  AWS_BUCKET: "udagram-image-uploads"
+  AWS_BUCKET: "udagram-uploads-dev"
   AWS_REGION: "us-east-1"
-  AWS_PROFILE: "default"
+  AWS_PROFILE: "udagram-app-dev"
   POSTGRES_HOST: "udagram-db.cx7oums89urt.us-east-1.rds.amazonaws.com"
   POSTGRES_DB: "postgres"
-  URL: "http://BEF69896BCD534A376E2E32DB5AA1315.gr7.us-east-2.eks.amazonaws.com"
+  URL: "http://a2576ca2e04084680bb5873583166d3e-1926114653.us-east-1.elb.amazonaws.com:8080"

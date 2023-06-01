@@ -64,13 +64,13 @@
 
 ### DockerHub images
 
-![dockerhub image](screenshots/microservice-dockerhub.jpg)
+![dockerhub image](screenshots/u-docker.jpg)
 
 
 ## Independent Releases and Deployments
 
 ### Use Travis to build a CI/CD pipeline
-![Travis Image](screenshots/uda-travis.jpg)
+![Travis Image](screenshots/u-travis.jpg)
 
 ## Service Orchestration with Kubernetes
 
@@ -79,7 +79,10 @@
 ![Deploy Image](screenshots/u-deployments.jpg)
 [x] Pods - screenshot
 ![Pods Image](screenshots/u-pods.jpg)
-[x] Describe Services - No secrets exposed verified
+[x] Describe Services - screenshots
+![Service Image 1](screenshots/u-services1.jpg)
+![Service Image 2](screenshots/u-services2.jpg)
+![Service Image 3](screenshots/u-services3.jpg)
 
 ### Use a reverse proxy to direct requests to the appropriate backend
 [x] Reverse proxy screenshot
@@ -87,8 +90,15 @@
 
 ### Configure scaling and self-healing for each service
 
-[ ] Kubernetes service replicas
+[x] Kubernetes service replicas
+![Replicas image](screenshots/u-replicas.jpg)
 
-[ ] Screenshot - kubectl describe hpa
+[x] Autoscaling - screenshot
+![Autoscale image](screenshots/u-autoscale.jpg)
 
 
+## Debugging, Monitoring, and Logging
+
+### Use logs to capture metrics for debugging a microservices deployment
+
+[x]
