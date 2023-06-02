@@ -1,0 +1,42 @@
+digraph DependencyGraph {
+    rankdir=LR;
+    
+    node [shape=rectangle, style=filled, fillcolor=lightyellow]; // Style for nodes
+    RDS [shape=cylinder];
+    S3 [shape=folder];
+
+
+    // Edges representing dependencies
+    Client -> Frontend [dir=both];
+    Frontend -> "Reverse proxy" [dir=both];
+    "Reverse proxy" -> "API user" [dir=both];
+    "Reverse proxy" -> "API feed" [dir=both];
+    "API user" -> "RDS" [dir=both];
+    "API feed" -> "RDS" [dir=both];
+    "API feed" -> "S3" [dir=both];
+
+    // Create a subgraph for the container
+    
+
+    // Create a subgraph for the container
+    subgraph cluster_outer {
+        style=filled;
+        color=lightblue;
+        label="AWS Cloud";
+
+        // Border attributes for inner container
+        penwidth=2;
+        pencolor=cornflowerblue;
+        
+        // Nodes inside the outer container
+        Frontend;
+        "Reverse proxy";
+        "API user";
+        "API feed";
+        "RDS";
+        "S3";
+       
+    }
+
+    
+}
