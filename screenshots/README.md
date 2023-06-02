@@ -1,5 +1,14 @@
 # Refactor Udagram App into Microservices and Deploy
 
+### Application URL: http://adf91ed792fb74b538c9cc8c79a64a7b-1719184279.us-east-1.elb.amazonaws.com/home
+
+<br>
+
+### API URL: http://a5a94ba08f6fb445d9bfd8bdcdc8c255-1349580618.us-east-1.elb.amazonaws.com:8080
+
+<br>
+
+
 ## Containers and Microservices
 
 ### Divide an application into microservices
